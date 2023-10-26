@@ -1,0 +1,22 @@
+
+#include<stdio.h>
+int main()
+{
+	int i = 0;
+	int n = 0;
+	int a = 1;
+	int b = 0;
+	int c = 0;
+	scanf_s("%d", &c);
+	for (n = 1; n <=c; n++)
+	{
+		for (i = 1; i <= n; i++)
+		{
+			a = a * i;
+		}
+		b = b + a;
+		a = 1;
+	}
+	printf("%d",b);
+	return 0;
+}
